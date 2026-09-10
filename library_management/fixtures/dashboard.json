@@ -1,0 +1,39 @@
+[
+ {
+  "cards": [
+   {
+    "card": "Issued Books"
+   },
+   {
+    "card": "Pending Fines"
+   },
+   {
+    "card": "Total Members"
+   },
+   {
+    "card": "Overdue Books"
+   },
+   {
+    "card": "Available Books"
+   },
+   {
+    "card": "Total Books"
+   }
+  ],
+  "chart_options": null,
+  "charts": [
+   {
+    "chart": null,
+    "width": "Half"
+   }
+  ],
+  "dashboard_name": "Library Management Dashboard",
+  "docstatus": 0,
+  "doctype": "Dashboard",
+  "is_default": 1,
+  "is_standard": 0,
+  "modified": "2026-09-11 02:01:47.084203",
+  "module": null,
+  "name": "Library Management Dashboard"
+ }
+]

@@ -261,3 +261,35 @@ permission_query_conditions = {
     "Book Issue": "library_management.api.get_book_issue_permission_query",
     "Book Return": "library_management.api.get_book_return_permission_query",
 }
+
+fixtures = [
+    {
+        "dt": "Role",
+        "filters": [
+            ["name", "in", ["Librarian", "Library Member"]]
+        ],
+    },
+    {
+        "dt": "Number Card",
+        "filters": [
+            [
+                "name",
+                "in",
+                [
+                    "Total Books",
+                    "Available Books",
+                    "Issued Books",
+                    "Overdue Books",
+                    "Total Members",
+                    "Pending Fines",
+                ],
+            ]
+        ],
+    },
+    {
+        "dt": "Dashboard",
+        "filters": [
+            ["name", "in", ["Library Management Dashboard"]]
+        ],
+    },
+]
