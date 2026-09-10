@@ -1,0 +1,122 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "LIB-BOOK-.#####",
+ "creation": "2026-09-10 11:58:12.747636",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "book_title",
+  "isbn",
+  "author",
+  "category",
+  "publisher",
+  "publication_date",
+  "total_copies",
+  "available_copies",
+  "shelf_location",
+  "description",
+  "is_active"
+ ],
+ "fields": [
+  {
+   "fieldname": "book_title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Book Title",
+   "reqd": 1
+  },
+  {
+   "fieldname": "isbn",
+   "fieldtype": "Data",
+   "label": "ISBN",
+   "unique": 1
+  },
+  {
+   "fieldname": "author",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Author",
+   "options": "Book Author",
+   "reqd": 1
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Category",
+   "options": "Book Category",
+   "reqd": 1
+  },
+  {
+   "fieldname": "publisher",
+   "fieldtype": "Data",
+   "label": "Publisher"
+  },
+  {
+   "fieldname": "publication_date",
+   "fieldtype": "Date",
+   "label": "Publication Date"
+  },
+  {
+   "default": "1",
+   "fieldname": "total_copies",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Total Copies",
+   "reqd": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "available_copies",
+   "fieldtype": "Int",
+   "label": "Available Copies",
+   "reqd": 1
+  },
+  {
+   "fieldname": "shelf_location",
+   "fieldtype": "Data",
+   "label": "Shelf Location"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "default": "1",
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "label": "Is Active"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-09-11 01:02:21.071785",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Library Book",
+ "naming_rule": "Set by user",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

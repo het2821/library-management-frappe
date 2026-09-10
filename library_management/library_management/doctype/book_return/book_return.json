@@ -1,0 +1,134 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "LIB-RET-.#####",
+ "creation": "2026-09-10 12:22:52.416442",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "book_issue",
+  "amended_from",
+  "book",
+  "issue_date",
+  "due_date",
+  "return_date",
+  "late_days",
+  "fine_per_day",
+  "fine_amount",
+  "fine_status",
+  "remarks",
+  "member"
+ ],
+ "fields": [
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Book Return",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "book_issue",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Book Issue",
+   "options": "Book Issue",
+   "reqd": 1
+  },
+  {
+   "fieldname": "book",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Book",
+   "options": "Library Book",
+   "reqd": 1
+  },
+  {
+   "fieldname": "issue_date",
+   "fieldtype": "Date",
+   "label": "Issue Date"
+  },
+  {
+   "fieldname": "due_date",
+   "fieldtype": "Date",
+   "label": "Due Date"
+  },
+  {
+   "fieldname": "return_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Return Date",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "late_days",
+   "fieldtype": "Int",
+   "label": "Late Days"
+  },
+  {
+   "default": "10",
+   "fieldname": "fine_per_day",
+   "fieldtype": "Currency",
+   "label": "Fine Per Day"
+  },
+  {
+   "default": "0",
+   "fieldname": "fine_amount",
+   "fieldtype": "Currency",
+   "label": "Fine Amount"
+  },
+  {
+   "default": "Not Applicable",
+   "fieldname": "fine_status",
+   "fieldtype": "Select",
+   "label": "Fine Status",
+   "options": "Not Applicable\nPending\nPaid\nWaived"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "member",
+   "fieldtype": "Link",
+   "label": "Member",
+   "options": "Library Member"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-09-11 00:42:19.656750",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Book Return",
+ "naming_rule": "Set by user",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -256,3 +256,8 @@ app_license = "mit"
 # List of apps whose translatable strings should be excluded from this app's translations.
 # ignore_translatable_strings_from = []
 
+permission_query_conditions = {
+    "Library Member": "library_management.api.get_permission_query_conditions",
+    "Book Issue": "library_management.api.get_book_issue_permission_query",
+    "Book Return": "library_management.api.get_book_return_permission_query",
+}
